@@ -677,7 +677,7 @@ Joes Styles
 */
 
 
-.blog-text {
-  font-size: 16px;
-  font-family: Lato, arial;
+.ghub-link {
+  display: inline-block;
+  margin-left: 20px;
 }
