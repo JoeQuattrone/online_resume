@@ -1,355 +1,321 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Joe Quattrone</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- FontAwesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+  <!-- ******HEADER****** -->
+  <header class="header">
+      <div class="container clearfix">
+          <%= image_tag("second_small_circular", class: "profile-image img-fluid float-left") %>
+          <div class="profile-content float-left">
+              <h1 class="name">Joe Quattrone</h1>
+              <h2 class="desc">Full-Stack Web Developer</h2>
+              <ul class="social list-inline">
+                  <li class="list-inline-item"><a href="https://github.com/JoeQuattrone" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/joseph-quattrone-47382b103/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li class="list-inline-item"><a href="https://www.facebook.com/joe.quattrone.7" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                  <li class="list-inline-item last-item"><a href="https://medium.com/@joequattrone5" target="_blank"><i class="fab fa-medium"></i></a></li>
+              </ul>
+          </div><!--//profile-->
+          <a class="btn btn-cta-primary float-right" href="mailto:joequattrone5@gmail.com"><i class="fas fa-paper-plane"></i> Contact Me</a>
+      </div><!--//container-->
+  </header><!--//header-->
 
-    <!-- Global CSS -->
+  <div class="container sections-wrapper">
+      <div class="row">
+          <div class="primary col-lg-8 col-12">
+              <section class="about section">
+                  <div class="section-inner">
+                      <h2 class="heading">About Me</h2>
+                      <div class="content">
+                          <p>Welcome, let me tell you about myself. I'm a passionate Web Developer with a drive for excellence! I strive to be the best at what I do and put 100 percent of myself into every commitment I make. My passion carries into all aspects of my life, not just work. Some of my hobbies include: running, watching and practicing Mixed Martial Arts, reading and, of course, spending time with friends and family.</p>
 
-    <!-- github calendar css -->
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </section><!--//section-->
 
-    <!-- github acitivity css -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+             <section class="latest section">
+                  <div class="section-inner">
+                      <h2 class="heading">Latest Projects</h2>
+                      <div class="content">
 
+                          <div class="item featured text-center">
+                              <h3 class="title"><a href="https://j-travel.herokuapp.com/" target="_blank">J-Travel</a></h3>
+                              <p class="summary">A beautiful hotel-booking website that uses real data to mock the functionality of Hotels.com</p>
+                              <div class="featured-image has-ribbon">
+                                  <a href="https://j-travel.herokuapp.com/" target="_blank">
+                                  <%= image_tag("j_travel_img", class: "img-fluid project-image")%>
+                                  </a>
+                                  <div class="ribbon">
+                                      <div class="text">New</div>
+                                  </div>
+                              </div>
 
-    <!-- Theme CSS -->
-
-    <%= stylesheet_link_tag "application" %>
-
-</head>
-
-<body>
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container clearfix">
-
-
-            <%= image_tag("second_small_circular", class: "profile-image img-fluid float-left") %>
-            <div class="profile-content float-left">
-                <h1 class="name">Joe Quattrone</h1>
-                <h2 class="desc">Full-Stack Web Developer</h2>
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://github.com/JoeQuattrone" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/joseph-quattrone-47382b103/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.facebook.com/joe.quattrone.7" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li class="list-inline-item last-item"><a href="https://medium.com/@joequattrone5" target="_blank"><i class="fab fa-medium"></i></a></li>
-                </ul>
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="mailto:joequattrone5@gmail.com"><i class="fas fa-paper-plane"></i> Contact Me</a>
-        </div><!--//container-->
-    </header><!--//header-->
-
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Welcome, let me tell you about myself. I'm a passionate Web Developer with a drive for excellence! I strive to be the best at what I do and put 100 percent of myself into every commitment I make. My passion carries into all aspects of my life, not just work. Some of my hobbies include: running, watching and practicing Mixed Martial Arts, reading and, of course, spending time with friends and family.</p>
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-               <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">
-
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="https://j-travel.herokuapp.com/" target="_blank">J-Travel</a></h3>
-                                <p class="summary">A beautiful hotel-booking website that uses real data to mock the functionality of Hotels.com</p>
-                                <div class="featured-image has-ribbon">
-                                    <a href="https://j-travel.herokuapp.com/" target="_blank">
-                                    <%= image_tag("j_travel_img", class: "img-fluid project-image")%>
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
-                                </div>
-
-                                <div class="desc text-left">
-                                    <p>On J-Travel you can search for hotels in any city in the world and find real, available hotels. You can then book a hotel (not really) and view it on the 'My Trips' page of your profile. J-Travel offers many more features and is a fast, compact application built with Ruby on Rails and Javascript. (Note: <strong>Please be patient</strong> upon loading these websites as they are using shared servers.) </p>
-                                </div><!--//desc-->
-                                <a class="btn btn-cta-secondary" href="https://j-travel.herokuapp.com/" target="_blank">View my project
-                                </a>
-                                <a style="background-color: #3AAA64; border-color: #3AAA64;" class="btn btn-cta-secondary" href="https://github.com/JoeQuattrone/j_travel" target="_blank">Github
-                                </a>
+                              <div class="desc text-left">
+                                  <p>On J-Travel you can search for hotels in any city in the world and find real, available hotels. You can then book a hotel (not really) and view it on the 'My Trips' page of your profile. J-Travel offers many more features and is a fast, compact application built with Ruby on Rails and Javascript. (Note: <strong>Please be patient</strong> upon loading these websites as they are using shared servers.) </p>
+                              </div><!--//desc-->
+                              <a class="btn btn-cta-secondary" href="https://j-travel.herokuapp.com/" target="_blank">View my project
+                              </a>
+                              <a style="background-color: #3AAA64; border-color: #3AAA64;" class="btn btn-cta-secondary" href="https://github.com/JoeQuattrone/j_travel" target="_blank">Github
+                              </a>
 
 
 
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://my-jingle.herokuapp.com/" target="_blank">
-                                <%= image_tag("jingle", class: "img-fluid project-image") %>
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://my-jingle.herokuapp.com/" target="_blank">jingle - Financial Planning Application</a></h3>
-                                    <p class="mb-2">To get started sign up or login in from this test account. Login: 'test@test.com', password: 'test'. With jingle, users set a monetary goal and this app calculates and presents exactly how to get there. </p>
-                                    <p>
-                                      <a class="more-link" href="https://my-jingle.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i>View project</a>
-                                      <a class="more-link ghub-link" href="https://github.com/JoeQuattrone/jingle" target="_blank"><i class="fab fa-github fa-lg"></i>Github</a>
-                                    </p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://rubygems.org/gems/ufc_schedule" target="_blank">
-                                  <%= image_tag("ufc_schedule", class: "img-fluid project-image")%>
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://rubygems.org/gems/ufc_schedule" target="_blank">UFC Schedule - Ruby Gem</a></h3>
-                                    <p class="mb-2">With over 2,000 downloads and counting, this powerful Ruby gem brings the UFC Schedule to your command line. Built with OO Ruby, This gem scrapes with Nokogiri and uses the UFC API to collect data.</p>
-                                    <p>
-                                      <a class="more-link" href="https://rubygems.org/gems/ufc_schedule" target="_blank"><i class="fas fa-external-link-alt"></i>View project</a>
-                                      <a class="more-link ghub-link" href="https://github.com/JoeQuattrone/ufc_schedule" target="_blank"><i class="fab fa-github fa-lg"></i>Github</a>
-                                    </p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/project-4.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro - Bootstrap 4 Theme for Mobile Startups</a></h3>
-                                    <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.</p>
-                                    <p>
-                                      <a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fas fa-external-link-alt"></i>View project</a>
-                                      <a class="more-link ghub-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fab fa-github fa-lg"></i>Github</a>
-                                      </p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-
-
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Customer Care Consultant - <span class="place"><a href="https://www.protechassociates.com/?gclid=Cj0KCQjw7sDlBRC9ARIsAD-pDFqGsMcthkQY94JS0Js8ixCHnmJq-VpWgi9Jg9NBsvSJwDbJkRUNkfYaAmFuEALw_wcB">Protech Associates</a></span> <span class="year">(2018)</span></h3>
-                                <p>
-                                  Collaborated with a team of 5 to manage customer support for over 150 small and large businesses. Instructed businesses on the use of Protech Software, which is an expanded version of Microsoft Dynamics 360 CRM. Troubleshot and resolved various bugs that were critical to clients’ operations which led to an 80 percent “keep” rate of issues. Created instructional videos for business and employee use on the software.
-                                </p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Tax Intern - <span class="place"><a href="https://www.mccormickcorporation.com/">McCormick & Company</a></span> <span class="year">(2016 - 2017)</span></h3>
-                                <p>
-                                  Prepared corporate tax documents, such as Schedule K-1, using MS Excel and CorpTax software. Utilized multiple financial software such as Adobe Hyperion to analyze Balance Sheets and Profit/Loss statements. Operated SAP to examine specific expense accounts (Meals & Entertainment & Political Contributions) for reporting purposes.
-                                </p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Account Sales Representative - <span class="place"><a href="#">MarketSource Inc.</a></span> <span class="year">(2015 - 2016)</span></h3>
-                                <p>
-                                  Represented Hewlett-Packard brand, sold merchandise, provided customer service, and won Employee of The Week 4 times. Strategized with store management to promote HP brand, which led to an estimated 200 percent increase in sales. Trained MarketSource employees as well as retail employees on product knowledge.
-                                </p>
-                            </div><!--//item-->
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-                <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">My GitHub</h2>
-
-                        <div id="github-graph" class="github-graph">
-
-                        </div><!--//github-graph-->
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
-                        <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Laurel, MD</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:joequattrone5@gmail.com">joequattrone5@gmail.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.joequattrone.com">https://www.joequattrone.com</a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//aside-->
-
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            <p class="intro">
-                                Extensive experience with fundamental languages HTML, CSS3 &amp; SASS, combined with Ruby on Rails &amp; JavaScript results in fast, dynamic web applications.
-                              </p>
-
-                            <div class="skillset">
-
-                                <div class="item">
-                                    <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Advanced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Advanced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="93%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3 &amp; SASS <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Advanced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="93%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">React<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-
-                            </div>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <!-- <aside class="testimonials aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">
-                                    <p><i class="fas fa-quote-left"></i>Joe is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
-                                </blockquote>
-                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>
-                            </div><!--//item-->
-
-                            <!-- <p><a class="more-link" href="www.linkedin.com/in/joseph-quattrone-47382b103"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p>
-
-                        </div>
-                    </div>
-                </aside> -->
-
-
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                          <div class="item">
-                            <h3 class="title"><i class="fas fa-graduation-cap"></i> Full Stack Web Development</h3>
-                            <h4 class="university">Flatiron School <span class="year">(2018-2019)</span></h4>
                           </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Business Administration - Finance</h3>
-                                <h4 class="university">Towson University <span class="year">(2013-2017)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+                          <hr class="divider" />
+                          <div class="item row">
+                              <a class="col-md-4 col-12" href="https://my-jingle.herokuapp.com/" target="_blank">
+                              <%= image_tag("jingle", class: "img-fluid project-image") %>
+                              </a>
+                              <div class="desc col-md-8 col-12">
+                                  <h3 class="title"><a href="https://my-jingle.herokuapp.com/" target="_blank">jingle - Financial Planning Application</a></h3>
+                                  <p class="mb-2">To get started sign up or login in from this test account. Login: 'test@test.com', password: 'test'. With jingle, users set a monetary goal and this app calculates and presents exactly how to get there. </p>
+                                  <p>
+                                    <a class="more-link" href="https://my-jingle.herokuapp.com/" target="_blank"><i class="fas fa-external-link-alt"></i>View project</a>
+                                    <a class="more-link ghub-link" href="https://github.com/JoeQuattrone/jingle" target="_blank"><i class="fab fa-github fa-lg"></i>Github</a>
+                                  </p>
+                              </div><!--//desc-->
+                          </div><!--//item-->
 
-                <aside class="blog aside section">
-                    <div class="section-inner">
-                      <h3 style="margin-bottom: 30px;">Recent Blog Posts</h3>
-                    <div class="item">
-                      <h3 class="title"><a href="https://medium.com/@joequattrone5/rails-javascipt-flatiron-school-project-4-5d4bdbe21d3c" target="_blank">Rails & JavaScipt — Flatiron School Project #4</a></h3>
-                      <div>
-                        <p>
-                          For the fourth project in the Flatiron School Online Web Immersive program, we were required to build off of our previous Ruby on Rails project and implement JavaScript into it...
-                        </p><a class="more-link" href="https://medium.com/@joequattrone5/rails-javascipt-flatiron-school-project-4-5d4bdbe21d3c" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a>
+                          <div class="item row">
+                              <a class="col-md-4 col-12" href="https://rubygems.org/gems/ufc_schedule" target="_blank">
+                                <%= image_tag("ufc_schedule", class: "img-fluid project-image")%>
+                              </a>
+                              <div class="desc col-md-8 col-12">
+                                  <h3 class="title"><a href="https://rubygems.org/gems/ufc_schedule" target="_blank">UFC Schedule - Ruby Gem</a></h3>
+                                  <p class="mb-2">With over 2,000 downloads and counting, this powerful Ruby gem brings the UFC Schedule to your command line. Built with OO Ruby, This gem scrapes with Nokogiri and uses the UFC API to collect data.</p>
+                                  <p>
+                                    <a class="more-link" href="https://rubygems.org/gems/ufc_schedule" target="_blank"><i class="fas fa-external-link-alt"></i>View project</a>
+                                    <a class="more-link ghub-link" href="https://github.com/JoeQuattrone/ufc_schedule" target="_blank"><i class="fab fa-github fa-lg"></i>Github</a>
+                                  </p>
+                              </div><!--//desc-->
+                          </div><!--//item-->
+
+
+                          <div class="item row">
+                              <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">
+                              <img class="img-fluid project-image" src="assets/images/projects/project-4.png" alt="project name" />
+                              </a>
+                              <div class="desc col-md-8 col-12">
+                                  <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro - Bootstrap 4 Theme for Mobile Startups</a></h3>
+                                  <p class="mb-2">You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus.</p>
+                                  <p>
+                                    <a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fas fa-external-link-alt"></i>View project</a>
+                                    <a class="more-link ghub-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank"><i class="fab fa-github fa-lg"></i>Github</a>
+                                    </p>
+                              </div><!--//desc-->
+                          </div><!--//item-->
+
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </section><!--//section-->
+
+
+
+              <section class="experience section">
+                  <div class="section-inner">
+                      <h2 class="heading">Work Experience</h2>
+                      <div class="content">
+                          <div class="item">
+                              <h3 class="title">Customer Care Consultant - <span class="place"><a href="https://www.protechassociates.com/?gclid=Cj0KCQjw7sDlBRC9ARIsAD-pDFqGsMcthkQY94JS0Js8ixCHnmJq-VpWgi9Jg9NBsvSJwDbJkRUNkfYaAmFuEALw_wcB">Protech Associates</a></span> <span class="year">(2018)</span></h3>
+                              <p>
+                                Collaborated with a team of 5 to manage customer support for over 150 small and large businesses. Instructed businesses on the use of Protech Software, which is an expanded version of Microsoft Dynamics 360 CRM. Troubleshot and resolved various bugs that were critical to clients’ operations which led to an 80 percent “keep” rate of issues. Created instructional videos for business and employee use on the software.
+                              </p>
+                          </div><!--//item-->
+                          <div class="item">
+                              <h3 class="title">Tax Intern - <span class="place"><a href="https://www.mccormickcorporation.com/">McCormick & Company</a></span> <span class="year">(2016 - 2017)</span></h3>
+                              <p>
+                                Prepared corporate tax documents, such as Schedule K-1, using MS Excel and CorpTax software. Utilized multiple financial software such as Adobe Hyperion to analyze Balance Sheets and Profit/Loss statements. Operated SAP to examine specific expense accounts (Meals & Entertainment & Political Contributions) for reporting purposes.
+                              </p>
+                          </div><!--//item-->
+
+                          <div class="item">
+                              <h3 class="title">Account Sales Representative - <span class="place"><a href="#">MarketSource Inc.</a></span> <span class="year">(2015 - 2016)</span></h3>
+                              <p>
+                                Represented Hewlett-Packard brand, sold merchandise, provided customer service, and won Employee of The Week 4 times. Strategized with store management to promote HP brand, which led to an estimated 200 percent increase in sales. Trained MarketSource employees as well as retail employees on product knowledge.
+                              </p>
+                          </div><!--//item-->
+
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </section><!--//section-->
+              <section class="github section">
+                  <div class="section-inner">
+                      <h2 class="heading">My GitHub</h2>
+
+                      <div id="github-graph" class="github-graph">
+
+                      </div><!--//github-graph-->
+                      <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
+                      <div id="ghfeed" class="ghfeed">
+                      </div><!--//ghfeed-->
+
+                  </div><!--//secton-inner-->
+              </section><!--//section-->
+          </div><!--//primary-->
+          <div class="secondary col-lg-4 col-12">
+               <aside class="info aside section">
+                  <div class="section-inner">
+                      <h2 class="heading sr-only">Basic Information</h2>
+                      <div class="content">
+                          <ul class="list-unstyled">
+                              <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Laurel, MD</li>
+                              <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:joequattrone5@gmail.com">joequattrone5@gmail.com</a></li>
+                              <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.joequattrone.com">https://www.joequattrone.com</a></li>
+                          </ul>
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </aside><!--//aside-->
+
+              <aside class="skills aside section">
+                  <div class="section-inner">
+                      <h2 class="heading">Skills</h2>
+                      <div class="content">
+                          <p class="intro">
+                              Extensive experience with fundamental languages HTML, CSS3 &amp; SASS, combined with Ruby on Rails &amp; JavaScript results in fast, dynamic web applications.
+                            </p>
+
+                          <div class="skillset">
+
+                              <div class="item">
+                                  <h3 class="level-title">Ruby on Rails<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Advanced</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="96%">
+                                      </div>
+                                  </div><!--//level-bar-->
+                              </div><!--//item-->
+
+                              <div class="item">
+                                  <h3 class="level-title">Javascript &amp; jQuery<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Advanced</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="93%">
+                                      </div>
+                                  </div><!--//level-bar-->
+                              </div><!--//item-->
+
+                              <div class="item">
+                                  <h3 class="level-title">HTML5, CSS3 &amp; SASS <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Advanced</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="93%">
+                                      </div>
+                                  </div><!--//level-bar-->
+                              </div><!--//item-->
+
+                              <div class="item">
+                                  <h3 class="level-title">React<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to explain more about your skill level..."><i class="fas fa-info-circle"></i>Intermediate</span></h3>
+                                  <div class="level-bar">
+                                      <div class="level-bar-inner" data-level="85%">
+                                      </div>
+                                  </div><!--//level-bar-->
+                              </div><!--//item-->
+
+
+                          </div>
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </aside><!--//section-->
+
+              <!-- <aside class="testimonials aside section">
+                  <div class="section-inner">
+                      <h2 class="heading">Testimonials</h2>
+                      <div class="content">
+                          <div class="item">
+                              <blockquote class="quote">
+                                  <p><i class="fas fa-quote-left"></i>Joe is an excellent software engineer and he is passionate about what he does. You can totally count on him to deliver your projects!</p>
+                              </blockquote>
+                              <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>
+                          </div><!--//item-->
+
+                          <!-- <p><a class="more-link" href="www.linkedin.com/in/joseph-quattrone-47382b103"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p>
+
                       </div>
+                  </div>
+              </aside> -->
+
+
+              <aside class="education aside section">
+                  <div class="section-inner">
+                      <h2 class="heading">Education</h2>
+                      <div class="content">
+                        <div class="item">
+                          <h3 class="title"><i class="fas fa-graduation-cap"></i> Full Stack Web Development</h3>
+                          <h4 class="university">Flatiron School <span class="year">(2018-2019)</span></h4>
+                        </div><!--//item-->
+                          <div class="item">
+                              <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Business Administration - Finance</h3>
+                              <h4 class="university">Towson University <span class="year">(2013-2017)</span></h4>
+                          </div><!--//item-->
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </aside><!--//section-->
+
+              <aside class="blog aside section">
+                  <div class="section-inner">
+                    <h3 style="margin-bottom: 30px;">Recent Blog Posts</h3>
+                  <div class="item">
+                    <h3 class="title"><a href="https://medium.com/@joequattrone5/rails-javascipt-flatiron-school-project-4-5d4bdbe21d3c" target="_blank">Rails & JavaScipt — Flatiron School Project #4</a></h3>
+                    <div>
+                      <p>
+                        For the fourth project in the Flatiron School Online Web Immersive program, we were required to build off of our previous Ruby on Rails project and implement JavaScript into it...
+                      </p><a class="more-link" href="https://medium.com/@joequattrone5/rails-javascipt-flatiron-school-project-4-5d4bdbe21d3c" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a>
                     </div>
+                  </div>
 
-                    <div class="item">
-                      <h3 class="title"><a href="https://medium.com/@joequattrone5/my-ruby-on-rails-project-for-flatiron-school-ab525e6972ee" target="_blank">My Ruby on Rails Project for Flatiron School</a></h3>
-                      <div>
-                        <p>
-                          In the Flatiron school program, for our third project, we were required to build a web application with Rails. I will link to my proje...
-                        </p><a class="more-link" href="https://medium.com/@joequattrone5/my-ruby-on-rails-project-for-flatiron-school-ab525e6972ee" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a>
-                      </div>
+                  <div class="item">
+                    <h3 class="title"><a href="https://medium.com/@joequattrone5/my-ruby-on-rails-project-for-flatiron-school-ab525e6972ee" target="_blank">My Ruby on Rails Project for Flatiron School</a></h3>
+                    <div>
+                      <p>
+                        In the Flatiron school program, for our third project, we were required to build a web application with Rails. I will link to my proje...
+                      </p><a class="more-link" href="https://medium.com/@joequattrone5/my-ruby-on-rails-project-for-flatiron-school-ab525e6972ee" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a>
                     </div>
-                    <div class="item">
+                  </div>
+                  <div class="item">
 
-                      <h3 class="title"><a href="https://medium.com/@joequattrone5/another-one-down-c0db260eee2d" target="_blank">Another One Down </a></h3>
-                      <div>
-                        <p>
-                          I finished my second project as a web developer this past week. The first project I created wasn’t a web application. It was a Ruby gem called ‘UFC Schedule’...
-                        </p><a class="more-link" href="https://medium.com/@joequattrone5/another-one-down-c0db260eee2d" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a>
-                      </div>
+                    <h3 class="title"><a href="https://medium.com/@joequattrone5/another-one-down-c0db260eee2d" target="_blank">Another One Down </a></h3>
+                    <div>
+                      <p>
+                        I finished my second project as a web developer this past week. The first project I created wasn’t a web application. It was a Ruby gem called ‘UFC Schedule’...
+                      </p><a class="more-link" href="https://medium.com/@joequattrone5/another-one-down-c0db260eee2d" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a>
                     </div>
+                  </div>
 
-                    <div class="item">
-                      <h3 class="title"><a href="https://medium.com/@joequattrone5/the-beginners-guide-to-self-in-ruby-2ed5d683d8a9" target="_blank">The Beginner’s Guide to ‘Self’ in Ruby</a></h3>
-                      <div>
-                        <p>
-                          If you’re new to object-oriented programing, the concept of ‘self’ may seem foreign to you. This article will take a deep dive at the concept of self and explain wha...
-                        </p><a class="more-link" href="https://medium.com/@joequattrone5/the-beginners-guide-to-self-in-ruby-2ed5d683d8a9" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a>
-                      </div>
+                  <div class="item">
+                    <h3 class="title"><a href="https://medium.com/@joequattrone5/the-beginners-guide-to-self-in-ruby-2ed5d683d8a9" target="_blank">The Beginner’s Guide to ‘Self’ in Ruby</a></h3>
+                    <div>
+                      <p>
+                        If you’re new to object-oriented programing, the concept of ‘self’ may seem foreign to you. This article will take a deep dive at the concept of self and explain wha...
+                      </p><a class="more-link" href="https://medium.com/@joequattrone5/the-beginners-guide-to-self-in-ruby-2ed5d683d8a9" target="_blank"><i class="fas fa-external-link-alt"></i>Read more</a>
                     </div>
+                  </div>
 
 
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+                  </div><!--//section-inner-->
+              </aside><!--//section-->
 
-                <aside class="list music aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Honors &amp;  Achievements</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                              <li><i class="fas fa-trophy"></i><a style="color: #434343;"href="https://youtu.be/U9f8zqvSJEk?t=53" target="_blank"> Honorary Instructor - Flatiron School </a></li>
-                                <li><i class="fas fa-trophy"></i> Treasurer - Tau Kappa Epsilon Fraternity</li>
-                                <li><i class="fas fa-trophy"></i> Dean's List Student - Towson</li>
-                                <li><i class="fas fa-trophy"></i> 4x Employee of The Week - MarketSource</li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+              <aside class="list music aside section">
+                  <div class="section-inner">
+                      <h2 class="heading">Honors &amp;  Achievements</h2>
+                      <div class="content">
+                          <ul class="list-unstyled">
+                            <li><i class="fas fa-trophy"></i><a style="color: #434343;"href="https://youtu.be/U9f8zqvSJEk?t=53" target="_blank"> Honorary Instructor - Flatiron School </a></li>
+                              <li><i class="fas fa-trophy"></i> Treasurer - Tau Kappa Epsilon Fraternity</li>
+                              <li><i class="fas fa-trophy"></i> Dean's List Student - Towson</li>
+                              <li><i class="fas fa-trophy"></i> 4x Employee of The Week - MarketSource</li>
+                          </ul>
+                      </div><!--//content-->
+                  </div><!--//section-inner-->
+              </aside><!--//section-->
 
-            </div><!--//secondary-->
-        </div><!--//row-->
-    </div><!--//masonry-->
+          </div><!--//secondary-->
+      </div><!--//row-->
+  </div><!--//masonry-->
 
-    <!-- ******FOOTER****** -->
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out our commercial license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+  <!-- ******FOOTER****** -->
+  <footer class="footer">
+      <div class="container text-center">
+              <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out our commercial license options via our website: themes.3rdwavemedia.com */-->
+              <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+      </div><!--//container-->
+  </footer><!--//footer-->
 
-    <!-- Javascript -->
+  <!-- Javascript -->
 
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <!-- custom js -->
-
-    <%= javascript_include_tag "application" %>
-</body>
-</html>
+  <!-- github activity plugin -->
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+  <!-- custom js -->
