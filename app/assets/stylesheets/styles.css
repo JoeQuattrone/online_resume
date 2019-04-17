@@ -681,3 +681,12 @@ Joes Styles
   display: inline-block;
   margin-left: 20px;
 }
+
+@media (max-width: 420px) {
+  #ghub-btn {
+    margin-top: 15px;
+  }
+  #ghub-section {
+    display: none;
+  }
+}
