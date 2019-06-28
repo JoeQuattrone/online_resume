@@ -248,7 +248,7 @@ a.dotted-link:hover {
 
 .latest .featured .summary {
   margin-bottom: 30px;
-  color: #778492;
+  color: #434343;
 }
 
 .latest .featured img {
@@ -352,7 +352,7 @@ a.dotted-link:hover {
 }
 
 .experience .item .title .place a {
-  color: #999;
+  color: #778492;
 }
 
 .experience .item .title .place a:hover {
@@ -481,13 +481,13 @@ a.dotted-link:hover {
 }
 
 .testimonials .item .source {
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 20px;
   font-weight: 500;
 }
 
 .testimonials .item .source .name {
-  color: #939ea9;
+  color: #778492;
   font-weight: 600;
 }
 
@@ -511,7 +511,7 @@ a.dotted-link:hover {
 
 .education .item .university {
   font-family: "Lato", arial, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: #999;
   font-weight: 600;
   padding-left: 25px;
@@ -689,4 +689,8 @@ Joes Styles
   #ghub-section {
     display: none;
   }
+}
+
+.content h3 a {
+  color: #545e69;
 }
