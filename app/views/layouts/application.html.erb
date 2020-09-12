@@ -12,15 +12,19 @@
 
       <!-- FontAwesome JS -->
       <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
-
-      <!-- Global CSS -->
-
-      <!-- github calendar css -->
-
       <!-- github acitivity css -->
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
       <!-- Theme CSS -->
-      <%= stylesheet_link_tag "application" %>
+      <%= stylesheet_link_tag "application" %> 
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177858741-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177858741-1');
+      </script>
   </head>
 
   <body>
