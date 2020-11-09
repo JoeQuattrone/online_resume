@@ -13,7 +13,11 @@
                   <li class="list-inline-item last-item"><a href="https://medium.com/@joequattrone5" target="_blank"><i class="fab fa-medium"></i></a></li>
               </ul>
           </div><!--//profile-->
-          <a class="btn btn-cta-primary float-right" href="mailto:joequattrone5@gmail.com"><i class="fas fa-paper-plane"></i> Contact Me</a>
+          <%= link_to asset_path("Joe_Quattrone_Resume.pdf"), target: "_blank", :id => "resume", :class => "btn btn-cta-primary float-right" do %>
+          <i class="fas fa-arrow-down"></i>
+            &nbsp; 
+            <span>View Resume</span>
+          <% end %>
       </div><!--//container-->
   </header><!--//header-->
 
@@ -112,7 +116,7 @@
                       <h2 class="heading">Work Experience</h2>
                       <div class="content">
                           <div class="item">
-                              <h3 class="title">Full Stack Engineer- <span class="place"><a href="#">Contrast Security Inc.</a></span> <span class="year">(2019)</span></h3>
+                              <h3 class="title">Full Stack Engineer- <span class="place"><a href="#">Contrast Security Inc.</a></span> <span class="year">(2019 - Present)</span></h3>
                               <p>
                                 Designed and developed software solutions in various languages implementing the best design practices. Collaborated with a hybrid-agile team practicing scrum. Lead cross-functional discussions with the objective of finding solutions to software problems.
                               </p>

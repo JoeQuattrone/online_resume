@@ -694,3 +694,13 @@ Joes Styles
 .content h3 a {
   color: #545e69;
 }
+
+#resume {
+  color: white;
+  padding-top: 10px;
+}
+
+#resume span {
+  position: relative;
+  top: -2px;
+}

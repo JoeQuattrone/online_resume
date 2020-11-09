@@ -21,3 +21,4 @@
 // = require github-calendar.min
 // = require github-activity-0.1.5.min
 // = require main
+// = require my_custom
